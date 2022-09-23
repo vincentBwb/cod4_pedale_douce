@@ -1,0 +1,27 @@
+
+* ################################################################################
+* Status descriptions
+* ------------------------------------------------------------
+
+@ Bike (status)
+    0: In used (by user)
+    1: Available (NOT in used by user)
+    2: Reserved (or Pre-reserved)
+    3: Out of order
+
+* ------------------------------------------------------------
+@ Borne (status)
+
+    !0: Available (doesn't contain a bike)  // !!! Need a swap with status 1 !!!
+    !1: Contain a bike (NOT available)      // !!! Need a swap with status 0 !!!
+    2: Reserved (or Pre-reserved)
+    3: Out of order
+
+* ------------------------------------------------------------
+@ Station (stat)
+
+   0: Nearest station (green)
+   1: Station with bike or borne available (blue)
+   2: Station with bike or borne unavailable (red)
+
+* ################################################################################
